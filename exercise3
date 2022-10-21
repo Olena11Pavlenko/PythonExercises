@@ -1,0 +1,13 @@
+#Exercise 3: Remove items from a list while iterating
+number_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+list_for_removing = []
+for i in range(len(number_list)):
+    num = number_list[i]
+    if num > 50:
+        list_for_removing.append(num)
+
+
+for x in range (len(list_for_removing)):
+    number = list_for_removing[x]
+    number_list.remove(number)
+print (number_list)
