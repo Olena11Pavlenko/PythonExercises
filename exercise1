@@ -1,2 +1,6 @@
 #Exercise 1: Reverse each word of a string
 str = 'My Name is Jessa'
+reverse_str = str[::-1]
+list = reverse_str.split(" ")
+list.reverse()
+print (' '.join(list))
