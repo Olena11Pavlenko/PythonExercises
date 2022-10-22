@@ -11,3 +11,13 @@ for a in num_list:
     if a >= 50:
         num_list.remove(a)
 print (num_list)
+
+nums_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+def remove_numbers (myList):
+    for a in myList:
+        if a >= 50:
+            myList.remove(a)
+    return myList
+remove_numbers (nums_list)
+print (num_list)
+
