@@ -5,3 +5,9 @@
 number_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 number_list = [x for x in number_list if x<= 50]
 print (number_list)
+
+num_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+for a in num_list:
+    if a >= 50:
+        num_list.remove(a)
+print (num_list)
