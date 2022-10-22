@@ -14,3 +14,10 @@ while len(numbs_list) > ind:
     else:
         numbs_list.pop(ind)
 print (numbs_list)
+
+numbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+l = len(numbers)-1
+for k in range(l, -1, -1):
+    if numbers[k] > 50:
+        numbers.pop(k)
+print (numbers)
