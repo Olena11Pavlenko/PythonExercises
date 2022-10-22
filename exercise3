@@ -6,18 +6,11 @@ number_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 number_list = [x for x in number_list if x<= 50]
 print (number_list)
 
-num_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-for a in num_list:
-    if a >= 50:
-        num_list.remove(a)
-print (num_list)
-
-nums_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-def remove_numbers (myList):
-    for a in myList:
-        if a >= 50:
-            myList.remove(a)
-    return myList
-remove_numbers (nums_list)
-print (num_list)
-
+numbs_list = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+ind = 0
+while len(numbs_list) > ind:
+    if numbs_list[ind] <= 50:
+        ind+=1
+    else:
+        numbs_list.pop(ind)
+print (numbs_list)
