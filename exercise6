@@ -1,6 +1,8 @@
 #https://edabit.com/challenge/gt9LLufDCMHKMioh2
+
 def stutter(word):
-    print(word(0:2), "... ", word(0:2), "... ", word, "?")
+	print (word[0:2], "...", word[0:2], "...", word, "?")
 
 meow = "hjgfguffuf"
 stutter(meow)
+
