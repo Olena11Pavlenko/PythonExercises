@@ -19,6 +19,7 @@ def encode_morse(message):
             if x == i:
                 dots = char_to_dots[i]
                 list_morse.append(dots)
-    return (list_morse)
+    message_morse = " ".join(list_morse)
+    return message_morse
 
 print (encode_morse("SWEET DREAMS, YURI. MEOW ;)"))
