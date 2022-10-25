@@ -1,3 +1,4 @@
+#https://edabit.com/challenge/5XXXppAdfcGaootD9
 def sum_odd_and_even(lst):
     list_a=[]
     list_b=[]
