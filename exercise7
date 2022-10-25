@@ -1,0 +1,12 @@
+def sum_odd_and_even(lst):
+    list_a=[]
+    list_b=[]
+    for i in lst:
+        if i%2==0:
+            list_a.append(i)
+        else:
+            list_b.append(i)
+    return list[sum(list_a),sum(list_b)]
+
+list_n = [1, 3, 4, 7, 8]
+print(sum_odd_and_even(list_n))
