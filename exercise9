@@ -1,0 +1,7 @@
+def has_friday_13(month, year):
+    import calendar
+    day = 13
+    return calendar.weekday(year, month, day) == 4
+
+print(has_friday_13 (10, 2022))
+print(has_friday_13 (5, 2022))
