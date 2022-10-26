@@ -15,10 +15,8 @@ def encode_morse(message):
     message_list = list(message)
     list_morse = []
     for x in message:
-        for i in char_to_dots:
-            if x == i:
-                dots = char_to_dots[i]
-                list_morse.append(dots)
+        dots = char_to_dots[x]
+        list_morse.append(dots)
     message_morse = " ".join(list_morse)
     return message_morse
 
