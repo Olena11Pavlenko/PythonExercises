@@ -22,4 +22,4 @@ def encode_morse(message):
     message_morse = " ".join(list_morse)
     return message_morse
 
-print (encode_morse("SWEET DREAMS, YURI. MEOW ;)"))
+print (encode_morse("HELLO YURI, WHAT'S WRONG WITH MY CODE?"))
