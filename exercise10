@@ -1,3 +1,4 @@
+#https://edabit.com/challenge/mHLAmj4vmRuXrT8Nb
 def consecutive_combo(lst1, lst2):
     lst=lst1+lst2
     lst.sort()
