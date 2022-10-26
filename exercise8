@@ -12,6 +12,7 @@ def encode_morse(message):
   ':': '---...', ',': '--..--', '=': '-...-', '!': '-.-.--', '.': '.-.-.-',
   '-': '-....-', '+': '.-.-.', '"': '.-..-.', '?': '..--..', '/': '-..-.'
 }
+    message = message.upper()
     message_list = list(message)
     list_morse = []
     for x in message:
@@ -20,4 +21,4 @@ def encode_morse(message):
     message_morse = " ".join(list_morse)
     return message_morse
 
-print (encode_morse("HELLO YURI, WHAT'S WRONG WITH MY CODE?"))
+print (encode_morse("My dear Yuri, thank you for helping me :*"))
