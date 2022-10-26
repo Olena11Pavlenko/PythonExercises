@@ -1,0 +1,16 @@
+def consecutive_combo(lst1, lst2):
+    lst=lst1+lst2
+    lst.sort()
+    a = lst[0]
+    for i in lst:
+        if i == a:
+            a+=1
+        else:
+            return False
+    return True
+
+
+print(consecutive_combo([7, 4, 5, 1], [2, 3, 6]))
+print(consecutive_combo([1, 4, 6, 5], [2, 7, 8, 9]))
+print(consecutive_combo([1, 4, 5, 6], [2, 3, 7, 8, 10]))
+print(consecutive_combo([44, 46], [45]))
