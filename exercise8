@@ -21,4 +21,4 @@ def encode_morse(message):
     message_morse = " ".join(list_morse)
     return message_morse
 
-print (encode_morse("My dear Yuri, thank you for helping me :*"))
+print (encode_morse("My dear Yuri, thank you for helping me :)"))
