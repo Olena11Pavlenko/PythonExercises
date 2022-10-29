@@ -1,0 +1,10 @@
+#https://edabit.com/challenge/gH3QMvF3czMDjENkk
+def remove_letters(letters, word):
+   letters = [x for x in letters if x not in word]
+   return letters
+
+print (remove_letters(["s", "t", "r", "i", "n", "g", "w"], "string"))
+
+print (remove_letters(["b", "b", "l", "l", "g", "n", "o", "a", "w"], "balloon"))
+
+print (remove_letters(["d", "b", "t", "e", "a", "i"], "edabit"))
