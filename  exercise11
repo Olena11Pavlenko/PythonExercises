@@ -1,7 +1,9 @@
 #https://edabit.com/challenge/gH3QMvF3czMDjENkk
 def remove_letters(letters, word):
-   letters = [x for x in letters if x not in word]
-   return letters
+    for i in word:
+        if i in letters:
+            letters.remove(i)
+    return letters
 
 print (remove_letters(["s", "t", "r", "i", "n", "g", "w"], "string"))
 
