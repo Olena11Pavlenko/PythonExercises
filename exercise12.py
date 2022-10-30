@@ -6,9 +6,13 @@ def pluralize(lst):
         if lst.count(i) > 1:
             lst_plr.append(i)
         else: lst_one.append(i)
-    lst_plr_one = lst_plr
     lst_plr = [x+'s' for x in lst_plr]
-    
-    return (lst_plr, lst_one)
+    list_answer = lst_one + lst_plr
+    answer = set()
+    for element in list_answer:
+        answer.add(element)
+    return (answer)
 
 print (pluralize(["cow", "pig", "cow", "cow"]))
+print(pluralize(["table", "table", "table"]))
+print(pluralize(["chair", "pencil", "arm"]))
