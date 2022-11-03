@@ -8,9 +8,7 @@ def pluralize(lst):
         else: lst_one.append(i)
     lst_plr = [x+'s' for x in lst_plr]
     list_answer = lst_one + lst_plr
-    answer = set()
-    for element in list_answer:
-        answer.add(element)
+    answer = set(list_answer)
     return (answer)
 
 print (pluralize(["cow", "pig", "cow", "cow"]))
