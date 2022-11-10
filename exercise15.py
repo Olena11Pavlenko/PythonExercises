@@ -12,15 +12,15 @@ def tic_tac_toe(inputs):
   sum_by_rows = np.sum(inputs, axis = 1)
   diagonal1 = np.diagonal(inputs)
   diagonal2 = np.array([inputs[0][2], inputs[1][1], inputs[2][0]])
-  if np.min(sum_by_columns) or np.min(sum_by_rows) or np.sum(diagonal1) or np.sum(diagonal2) == 0:
+  if np.min(sum_by_columns) == 0 or np.min(sum_by_rows) == 0 or np.sum(diagonal1) == 0 or np.sum(diagonal2) == 0:
     print ("Player 2 wins")
-  elif np.max(sum_by_columns) or np.max(sum_by_rows) or np.sum(diagonal1) or np.sum(diagonal2) == 3:
+  elif np.max(sum_by_columns) == 3 or np.max(sum_by_rows) == 3 or np.sum(diagonal1) == 3 or np.sum(diagonal2) == 3:
     print ("Player 1 wins")
   else:
     print ("It's a Tie")
 
 tic_tac_toe([
-  ["X", "O", "O"],
+  ["O", "O", "O"],
   ["O", "X", "X"],
   ["O", "#", "X"]
   ])
