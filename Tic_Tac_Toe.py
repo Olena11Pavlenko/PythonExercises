@@ -19,12 +19,10 @@ def tic_tac_toe(inputs):
     #inputs[inputs == "O"] = 1
     inputs=inputs.astype(int)
     sum_by_columns = np.sum(inputs, axis = 0)
-    print (sum_by_columns)
     sum_by_rows = np.sum(inputs, axis = 1)
     diagonal1 = np.diagonal(inputs)
     diagonal2 = np.diag(np.fliplr(inputs))
     num_rows = len(inputs)
-    print (inputs)
     if np.min(sum_by_columns) == num_rows or np.min(sum_by_rows) == num_rows or np.sum(diagonal1) == num_rows or np.sum(diagonal2) == num_rows:
         return "Player O wins"
     elif np.max(sum_by_columns) == num_rows*num1 or np.max(sum_by_rows) == num_rows*num1 or np.sum(diagonal1) == num_rows*num1 or np.sum(diagonal2) == num_rows*num1:
