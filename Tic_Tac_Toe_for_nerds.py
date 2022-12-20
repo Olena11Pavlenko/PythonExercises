@@ -1,11 +1,10 @@
 import numpy as np
 
 def unique_players(inputs):
-    l = list()
+    s = set()
     for row in inputs:
         for i in row:
-            l.append(i)
-    s = set(l)
+            s.add(i)
     return s
 
 def average(matrix):
@@ -16,24 +15,25 @@ def average(matrix):
     num_rows = len(matrix)
     averages = list((np.max(sum_by_columns/num_rows), np.max(sum_by_rows/num_rows), sum_by_diagonal1/num_rows, sum_by_diagonal2/num_rows))
     return averages
-def is_winner(a):
-    if 1 in average(a):
+
+def is_winner(game):
+    if 1 in average(game):
         return True
 
 def loop_players (inputs):
     inputs = np.array(inputs, dtype="object")
-    num_rows = len (inputs)
     for player in unique_players(inputs):
-        inputs1 = np.where(inputs == player, 1, np.zeros ((num_rows, num_rows)))
+        inputs1 = np.where(inputs == player, 1, 0)
         if is_winner(inputs1):
             return player 
     else: return False
     
 def tic_tac_toe(inputs):
-    if loop_players (inputs) == False:
+    looping = loop_players(inputs)
+    if looping == False:
         return "It's a Tie"
     else:
-        return "Player %s win" % loop_players (inputs)
+        return "Player %s win" % looping
 
 print (tic_tac_toe([
     ["X", "X", "O", "X", "P"],
